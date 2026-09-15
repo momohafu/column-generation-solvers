@@ -1,0 +1,54 @@
+{
+  "instance": "csp50",
+  "best_known": 3139,
+  "proved_optimal": true,
+  "methods": {
+    "direct": {
+      "objective": 3139,
+      "time_s": 0.05,
+      "gap": 0,
+      "optimal": true,
+      "note": "complete-pool set-covering IP (HIGHS): K=26 INFEASIBLE + K=27 OPTIMAL -> min 27 crews, cost 3139; CP-SAT cross-check"
+    },
+    "column_generation": {
+      "objective": 3139,
+      "time_s": 0.5,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 2,
+      "note": "GLOP RMP + CP-SAT single-crew pricing + pool-scan certificate; LP=3139=IP (integral LP); CP-SAT recovery"
+    },
+    "benders": {
+      "objective": 3139,
+      "time_s": 0.5,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 3,
+      "note": "binary selection master min theta + covering LP subproblem; 3 dual cuts; LB=repair=3139"
+    },
+    "lagrangian": {
+      "objective": 3139,
+      "time_s": 15,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 600,
+      "note": "relax covering; subgradient LB=3139 (anchor=known UB 3139); greedy repair UB=3139; MIP repair OPTIMAL"
+    },
+    "lbbd": {
+      "objective": 3139,
+      "time_s": 0.2,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 2,
+      "note": "selection master + coverage logic cuts (=lazy-constraint pool IP, scp41-style); 2 rounds / 50 cuts prove optimal; assignment+scheduling variant documented as mechanism demo"
+    },
+    "branch_and_price": {
+      "objective": 3139,
+      "time_s": 0.05,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 1,
+      "note": "root node LP integral -> 0 branches prove optimal; no fractional nodes exist in this instance; constrained experiments show infeasibility pruning"
+    }
+  }
+}

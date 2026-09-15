@@ -19,7 +19,7 @@
 | 1 | csp_1d_waescher | Waescher_TEST0005（m=57, L=10000） | 1D 切割下料 | min 辊数 | 待填入 |
 | 2 | bpp_falkenauer | u120_00（n=120, C=150） | 1D 装箱 | min 箱数 | 48 |
 | 3 | scp_beasley | scp41（200×1000） | 集合覆盖 | min 成本 | 429 |
-| 4 | crew_scheduling | csp50（50 任务） | 机组排班 | min 成本 | 待填入 |
+| 4 | crew_scheduling | csp50（50 任务） | 机组排班 | min 成本 | 27 crew / 3139（已证明） |
 | 5 | vrptw_solomon25 | c101（25 客户） | VRPTW | min 车数→距离 | 3 车 / 191.813620（=191.81，已证明） |
 | 6 | cutting_2d_cgcut | cgcut1（7 件，15×10） | 2D guillotine 切割 | max 价值 | 244 |
 
@@ -30,7 +30,7 @@
 | csp_1d_waescher | | | | | | | |
 | bpp_falkenauer | | | | | | | |
 | scp_beasley | | | | | | | |
-| crew_scheduling | | | | | | | |
+| crew_scheduling | 3139 / 0.05s / 0.0% | 3139 / 0.5s / 0.0% | 3139 / 0.5s / 0.0% | 3139 / 15s / 0.0% | 3139 / 0.2s / 0.0% | 27 crew / 3139 | 是（另含 B&P 0.05s 证明） |
 | vrptw_solomon25 | 191.81 / 0.9s / 0.0% | 191.81 / 10s / 0.0% | 191.81 / 11s / 0.0% | 191.81 / 20s / 0.0% | 191.81 / 3.6s / 0.0% | 3车 / 191.81 | 是（另含 B&P 4.5s 证明） |
 | cutting_2d_cgcut | | | | | | | |
 
