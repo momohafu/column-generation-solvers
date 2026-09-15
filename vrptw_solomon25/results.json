@@ -1,0 +1,54 @@
+{
+  "instance": "c101",
+  "best_known": 191.81362,
+  "proved_optimal": true,
+  "methods": {
+    "direct": {
+      "objective": 191.81362,
+      "time_s": 0.9,
+      "gap": 0,
+      "optimal": true,
+      "note": "3-index CP-SAT: K=2 INFEASIBLE(0.1s), K=3 OPTIMAL(0.8s) -> min 3 vehicles, distance 191.8136197787 (=191.81)"
+    },
+    "column_generation": {
+      "objective": 191.81362,
+      "time_s": 10.1,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 8,
+      "note": "CP-SAT pricing ESPPRC + GLOP RMP; 8 rounds; LP=IP=191.813620; pool 210449->4969; CP-SAT IP recovery"
+    },
+    "benders": {
+      "objective": 191.81362,
+      "time_s": 11,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 3,
+      "note": "binary column-selection master min theta + continuous covering LP subproblem; 3 cuts; LB=repair=191.813620"
+    },
+    "lagrangian": {
+      "objective": 191.81362,
+      "time_s": 20.4,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 600,
+      "note": "relax covering constraints; subgradient (coverage-count) LB=191.813620; greedy UB=191.813620; MIP repair OPTIMAL"
+    },
+    "lbbd": {
+      "objective": 191.81362,
+      "time_s": 3.6,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 22,
+      "note": "assignment master + single-vehicle TSP-TW subproblem; no-good 39 + Hooker 2 + exact bounds 2; master infeasible proves optimal"
+    },
+    "branch_and_price": {
+      "objective": 191.81362,
+      "time_s": 4.5,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 1,
+      "note": "root node LP integral (3 vehicles) -> 0 branches prove optimal; vehicle-count & Ryan-Foster arc branching validated via controlled experiments"
+    }
+  }
+}

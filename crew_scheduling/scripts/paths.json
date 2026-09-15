@@ -1,0 +1,266 @@
+{"tasks": [1], "cost": 0, "span": 143}
+{"tasks": [1, 18], "cost": 409, "span": 462}
+{"tasks": [1, 17], "cost": 457, "span": 461}
+{"tasks": [1, 16], "cost": 371, "span": 464}
+{"tasks": [1, 13], "cost": 286, "span": 443}
+{"tasks": [1, 11], "cost": 131, "span": 477}
+{"tasks": [1, 10], "cost": 169, "span": 399}
+{"tasks": [2], "cost": 0, "span": 203}
+{"tasks": [2, 18], "cost": 300, "span": 449}
+{"tasks": [2, 17], "cost": 346, "span": 448}
+{"tasks": [2, 13], "cost": 155, "span": 430}
+{"tasks": [3], "cost": 0, "span": 152}
+{"tasks": [3, 19], "cost": 347, "span": 447}
+{"tasks": [3, 18], "cost": 360, "span": 403}
+{"tasks": [3, 17], "cost": 319, "span": 402}
+{"tasks": [3, 16], "cost": 274, "span": 405}
+{"tasks": [3, 14], "cost": 245, "span": 474}
+{"tasks": [3, 13], "cost": 219, "span": 384}
+{"tasks": [4], "cost": 0, "span": 21}
+{"tasks": [4, 19], "cost": 471, "span": 410}
+{"tasks": [4, 18], "cost": 586, "span": 366}
+{"tasks": [4, 17], "cost": 462, "span": 365}
+{"tasks": [4, 16], "cost": 529, "span": 368}
+{"tasks": [4, 15], "cost": 349, "span": 479}
+{"tasks": [4, 14], "cost": 390, "span": 437}
+{"tasks": [4, 13], "cost": 288, "span": 347}
+{"tasks": [4, 12], "cost": 287, "span": 434}
+{"tasks": [4, 11], "cost": 178, "span": 381}
+{"tasks": [4, 10], "cost": 187, "span": 303}
+{"tasks": [5], "cost": 0, "span": 231}
+{"tasks": [5, 19], "cost": 77, "span": 373}
+{"tasks": [6], "cost": 0, "span": 187}
+{"tasks": [6, 25], "cost": 309, "span": 477}
+{"tasks": [6, 17], "cost": 109, "span": 324}
+{"tasks": [6, 17, 25], "cost": 259, "span": 477}
+{"tasks": [6, 16], "cost": 121, "span": 327}
+{"tasks": [6, 16, 25], "cost": 246, "span": 477}
+{"tasks": [6, 15], "cost": 130, "span": 438}
+{"tasks": [7], "cost": 0, "span": 129}
+{"tasks": [7, 25], "cost": 502, "span": 472}
+{"tasks": [7, 20], "cost": 307, "span": 463}
+{"tasks": [7, 19], "cost": 254, "span": 364}
+{"tasks": [7, 19, 25], "cost": 302, "span": 472}
+{"tasks": [7, 18], "cost": 170, "span": 320}
+{"tasks": [7, 18, 25], "cost": 267, "span": 472}
+{"tasks": [7, 17], "cost": 154, "span": 319}
+{"tasks": [7, 17, 25], "cost": 304, "span": 472}
+{"tasks": [7, 16], "cost": 203, "span": 322}
+{"tasks": [7, 16, 25], "cost": 328, "span": 472}
+{"tasks": [7, 15], "cost": 148, "span": 433}
+{"tasks": [8], "cost": 0, "span": 220}
+{"tasks": [8, 25], "cost": 324, "span": 471}
+{"tasks": [8, 17], "cost": 91, "span": 318}
+{"tasks": [8, 17, 25], "cost": 241, "span": 471}
+{"tasks": [9], "cost": 0, "span": 35}
+{"tasks": [9, 28], "cost": 713, "span": 471}
+{"tasks": [9, 26], "cost": 571, "span": 469}
+{"tasks": [9, 25], "cost": 560, "span": 395}
+{"tasks": [9, 23], "cost": 427, "span": 473}
+{"tasks": [9, 21], "cost": 303, "span": 432}
+{"tasks": [9, 20], "cost": 342, "span": 386}
+{"tasks": [9, 19], "cost": 285, "span": 287}
+{"tasks": [9, 19, 28], "cost": 475, "span": 471}
+{"tasks": [9, 19, 25], "cost": 333, "span": 395}
+{"tasks": [9, 17], "cost": 297, "span": 242}
+{"tasks": [9, 17, 25], "cost": 447, "span": 395}
+{"tasks": [9, 17, 23], "cost": 449, "span": 473}
+{"tasks": [9, 16], "cost": 236, "span": 245}
+{"tasks": [9, 16, 25], "cost": 361, "span": 395}
+{"tasks": [9, 16, 23], "cost": 373, "span": 473}
+{"tasks": [9, 15], "cost": 203, "span": 356}
+{"tasks": [9, 12], "cost": 61, "span": 311}
+{"tasks": [10], "cost": 0, "span": 169}
+{"tasks": [10, 28], "cost": 311, "span": 460}
+{"tasks": [10, 27], "cost": 327, "span": 477}
+{"tasks": [10, 26], "cost": 303, "span": 458}
+{"tasks": [10, 25], "cost": 163, "span": 384}
+{"tasks": [10, 23], "cost": 245, "span": 462}
+{"tasks": [10, 21], "cost": 82, "span": 421}
+{"tasks": [11], "cost": 0, "span": 214}
+{"tasks": [11, 29], "cost": 200, "span": 462}
+{"tasks": [11, 28], "cost": 208, "span": 427}
+{"tasks": [11, 27], "cost": 142, "span": 444}
+{"tasks": [11, 22], "cost": 26, "span": 460}
+{"tasks": [12], "cost": 0, "span": 230}
+{"tasks": [12, 31], "cost": 320, "span": 464}
+{"tasks": [12, 29], "cost": 233, "span": 425}
+{"tasks": [12, 27], "cost": 83, "span": 407}
+{"tasks": [12, 24], "cost": 23, "span": 446}
+{"tasks": [13], "cost": 0, "span": 120}
+{"tasks": [13, 32], "cost": 394, "span": 467}
+{"tasks": [13, 31], "cost": 443, "span": 441}
+{"tasks": [13, 29], "cost": 238, "span": 402}
+{"tasks": [13, 28], "cost": 280, "span": 367}
+{"tasks": [13, 27], "cost": 184, "span": 384}
+{"tasks": [13, 26], "cost": 175, "span": 365}
+{"tasks": [13, 25], "cost": 170, "span": 291}
+{"tasks": [13, 25, 31], "cost": 330, "span": 441}
+{"tasks": [13, 24], "cost": 209, "span": 423}
+{"tasks": [13, 23], "cost": 128, "span": 369}
+{"tasks": [14], "cost": 0, "span": 192}
+{"tasks": [14, 32], "cost": 410, "span": 449}
+{"tasks": [14, 31], "cost": 192, "span": 423}
+{"tasks": [14, 24], "cost": 22, "span": 405}
+{"tasks": [15], "cost": 0, "span": 174}
+{"tasks": [15, 33], "cost": 205, "span": 480}
+{"tasks": [15, 32], "cost": 301, "span": 389}
+{"tasks": [16], "cost": 0, "span": 60}
+{"tasks": [16, 33], "cost": 374, "span": 477}
+{"tasks": [16, 32], "cost": 410, "span": 386}
+{"tasks": [16, 31], "cost": 305, "span": 360}
+{"tasks": [16, 30], "cost": 278, "span": 381}
+{"tasks": [16, 29], "cost": 217, "span": 321}
+{"tasks": [16, 25], "cost": 125, "span": 210}
+{"tasks": [16, 25, 33], "cost": 429, "span": 477}
+{"tasks": [16, 25, 31], "cost": 285, "span": 360}
+{"tasks": [16, 24], "cost": 144, "span": 342}
+{"tasks": [16, 23], "cost": 137, "span": 288}
+{"tasks": [16, 23, 33], "cost": 261, "span": 477}
+{"tasks": [17], "cost": 0, "span": 52}
+{"tasks": [17, 33], "cost": 511, "span": 472}
+{"tasks": [17, 32], "cost": 552, "span": 381}
+{"tasks": [17, 31], "cost": 410, "span": 355}
+{"tasks": [17, 29], "cost": 232, "span": 316}
+{"tasks": [17, 27], "cost": 181, "span": 298}
+{"tasks": [17, 27, 33], "cost": 267, "span": 472}
+{"tasks": [17, 25], "cost": 150, "span": 205}
+{"tasks": [17, 25, 33], "cost": 454, "span": 472}
+{"tasks": [17, 25, 31], "cost": 310, "span": 355}
+{"tasks": [17, 23], "cost": 152, "span": 283}
+{"tasks": [17, 23, 33], "cost": 276, "span": 472}
+{"tasks": [17, 22], "cost": 58, "span": 314}
+{"tasks": [18], "cost": 0, "span": 49}
+{"tasks": [18, 33], "cost": 556, "span": 468}
+{"tasks": [18, 32], "cost": 343, "span": 377}
+{"tasks": [18, 31], "cost": 486, "span": 351}
+{"tasks": [18, 28], "cost": 206, "span": 277}
+{"tasks": [18, 25], "cost": 97, "span": 201}
+{"tasks": [18, 25, 33], "cost": 401, "span": 468}
+{"tasks": [18, 25, 31], "cost": 257, "span": 351}
+{"tasks": [18, 24], "cost": 170, "span": 333}
+{"tasks": [19], "cost": 0, "span": 88}
+{"tasks": [19, 33], "cost": 507, "span": 463}
+{"tasks": [19, 32], "cost": 367, "span": 372}
+{"tasks": [19, 31], "cost": 301, "span": 346}
+{"tasks": [19, 29], "cost": 249, "span": 307}
+{"tasks": [19, 28], "cost": 190, "span": 272}
+{"tasks": [19, 25], "cost": 48, "span": 196}
+{"tasks": [19, 25, 33], "cost": 352, "span": 463}
+{"tasks": [19, 25, 31], "cost": 208, "span": 346}
+{"tasks": [20], "cost": 0, "span": 161}
+{"tasks": [20, 32], "cost": 286, "span": 346}
+{"tasks": [21], "cost": 0, "span": 191}
+{"tasks": [21, 35], "cost": 412, "span": 466}
+{"tasks": [21, 32], "cost": 220, "span": 330}
+{"tasks": [21, 32, 35], "cost": 341, "span": 466}
+{"tasks": [22], "cost": 0, "span": 225}
+{"tasks": [22, 35], "cost": 298, "span": 428}
+{"tasks": [23], "cost": 0, "span": 152}
+{"tasks": [23, 35], "cost": 249, "span": 386}
+{"tasks": [23, 34], "cost": 193, "span": 410}
+{"tasks": [23, 33], "cost": 124, "span": 341}
+{"tasks": [24], "cost": 0, "span": 194}
+{"tasks": [24, 35], "cost": 265, "span": 374}
+{"tasks": [24, 34], "cost": 181, "span": 398}
+{"tasks": [25], "cost": 0, "span": 61}
+{"tasks": [25, 35], "cost": 435, "span": 373}
+{"tasks": [25, 34], "cost": 287, "span": 397}
+{"tasks": [25, 33], "cost": 304, "span": 328}
+{"tasks": [25, 31], "cost": 160, "span": 211}
+{"tasks": [25, 31, 35], "cost": 331, "span": 373}
+{"tasks": [26], "cost": 0, "span": 115}
+{"tasks": [26, 35], "cost": 273, "span": 353}
+{"tasks": [26, 33], "cost": 104, "span": 308}
+{"tasks": [27], "cost": 0, "span": 132}
+{"tasks": [27, 38], "cost": 481, "span": 479}
+{"tasks": [27, 35], "cost": 308, "span": 351}
+{"tasks": [27, 35, 38], "cost": 404, "span": 479}
+{"tasks": [27, 34], "cost": 279, "span": 375}
+{"tasks": [27, 33], "cost": 86, "span": 306}
+{"tasks": [28], "cost": 0, "span": 59}
+{"tasks": [28, 38], "cost": 361, "span": 423}
+{"tasks": [28, 36], "cost": 409, "span": 472}
+{"tasks": [28, 35], "cost": 364, "span": 295}
+{"tasks": [28, 35, 38], "cost": 460, "span": 423}
+{"tasks": [29], "cost": 0, "span": 70}
+{"tasks": [29, 39], "cost": 374, "span": 475}
+{"tasks": [29, 38], "cost": 329, "span": 399}
+{"tasks": [29, 35], "cost": 171, "span": 271}
+{"tasks": [29, 35, 39], "cost": 335, "span": 475}
+{"tasks": [29, 35, 38], "cost": 267, "span": 399}
+{"tasks": [29, 34], "cost": 226, "span": 295}
+{"tasks": [30], "cost": 0, "span": 112}
+{"tasks": [30, 39], "cost": 340, "span": 457}
+{"tasks": [30, 38], "cost": 419, "span": 381}
+{"tasks": [30, 36], "cost": 151, "span": 430}
+{"tasks": [30, 35], "cost": 101, "span": 253}
+{"tasks": [30, 35, 39], "cost": 265, "span": 457}
+{"tasks": [30, 35, 38], "cost": 197, "span": 381}
+{"tasks": [31], "cost": 0, "span": 54}
+{"tasks": [31, 40], "cost": 750, "span": 479}
+{"tasks": [31, 39], "cost": 282, "span": 420}
+{"tasks": [31, 38], "cost": 334, "span": 344}
+{"tasks": [31, 35], "cost": 171, "span": 216}
+{"tasks": [31, 35, 40], "cost": 403, "span": 479}
+{"tasks": [31, 35, 39], "cost": 335, "span": 420}
+{"tasks": [31, 35, 38], "cost": 267, "span": 344}
+{"tasks": [32], "cost": 0, "span": 25}
+{"tasks": [32, 40], "cost": 707, "span": 424}
+{"tasks": [32, 39], "cost": 298, "span": 365}
+{"tasks": [32, 38], "cost": 321, "span": 289}
+{"tasks": [32, 36], "cost": 167, "span": 338}
+{"tasks": [32, 35], "cost": 121, "span": 161}
+{"tasks": [32, 35, 40], "cost": 353, "span": 424}
+{"tasks": [32, 35, 39], "cost": 285, "span": 365}
+{"tasks": [32, 35, 38], "cost": 217, "span": 289}
+{"tasks": [33], "cost": 0, "span": 107}
+{"tasks": [33, 40], "cost": 490, "span": 415}
+{"tasks": [34], "cost": 0, "span": 80}
+{"tasks": [34, 44], "cost": 528, "span": 427}
+{"tasks": [34, 43], "cost": 545, "span": 437}
+{"tasks": [35], "cost": 0, "span": 41}
+{"tasks": [35, 47], "cost": 667, "span": 476}
+{"tasks": [35, 44], "cost": 457, "span": 412}
+{"tasks": [35, 43], "cost": 568, "span": 422}
+{"tasks": [35, 40], "cost": 232, "span": 304}
+{"tasks": [35, 40, 47], "cost": 397, "span": 476}
+{"tasks": [35, 39], "cost": 164, "span": 245}
+{"tasks": [35, 39, 47], "cost": 418, "span": 476}
+{"tasks": [35, 38], "cost": 96, "span": 169}
+{"tasks": [35, 38, 47], "cost": 589, "span": 476}
+{"tasks": [36], "cost": 0, "span": 201}
+{"tasks": [36, 47], "cost": 339, "span": 459}
+{"tasks": [36, 44], "cost": 228, "span": 395}
+{"tasks": [36, 43], "cost": 294, "span": 405}
+{"tasks": [37], "cost": 0, "span": 236}
+{"tasks": [37, 47], "cost": 280, "span": 430}
+{"tasks": [37, 44], "cost": 182, "span": 366}
+{"tasks": [38], "cost": 0, "span": 58}
+{"tasks": [38, 47], "cost": 493, "span": 365}
+{"tasks": [38, 46], "cost": 392, "span": 436}
+{"tasks": [38, 45], "cost": 268, "span": 408}
+{"tasks": [38, 42], "cost": 218, "span": 448}
+{"tasks": [39], "cost": 0, "span": 108}
+{"tasks": [39, 47], "cost": 254, "span": 339}
+{"tasks": [39, 46], "cost": 199, "span": 410}
+{"tasks": [39, 41], "cost": 68, "span": 347}
+{"tasks": [40], "cost": 0, "span": 34}
+{"tasks": [40, 50], "cost": 218, "span": 372}
+{"tasks": [40, 49], "cost": 182, "span": 383}
+{"tasks": [40, 48], "cost": 244, "span": 387}
+{"tasks": [40, 47], "cost": 165, "span": 206}
+{"tasks": [40, 47, 50], "cost": 192, "span": 372}
+{"tasks": [40, 46], "cost": 132, "span": 277}
+{"tasks": [41], "cost": 0, "span": 175}
+{"tasks": [41, 50], "cost": 21, "span": 333}
+{"tasks": [42], "cost": 0, "span": 229}
+{"tasks": [43], "cost": 0, "span": 49}
+{"tasks": [44], "cost": 0, "span": 37}
+{"tasks": [45], "cost": 0, "span": 127}
+{"tasks": [46], "cost": 0, "span": 136}
+{"tasks": [47], "cost": 0, "span": 29}
+{"tasks": [47, 50], "cost": 27, "span": 195}
+{"tasks": [48], "cost": 0, "span": 203}
+{"tasks": [49], "cost": 0, "span": 188}
+{"tasks": [50], "cost": 0, "span": 140}

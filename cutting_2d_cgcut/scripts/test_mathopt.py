@@ -1,0 +1,17 @@
+import datetime
+from ortools.math_opt.python import mathopt
+model=mathopt.Model(name="t")
+x=model.add_variable(lb=0.0, ub=float("inf"), is_integer=False, name="x")
+y=model.add_variable(lb=0.0, ub=float("inf"), is_integer=False, name="y")
+c1=model.add_linear_constraint(x + 2*y <= 10)
+c2=model.add_linear_constraint(x + y <= 1)
+model.maximize(3*x + 4*y)
+res=mathopt.solve(model, mathopt.SolverType.GLOP, params=mathopt.SolveParameters(time_limit=datetime.timedelta(seconds=10), enable_output=False))
+print("obj", res.objective_value(), "term", res.termination.reason)
+print("var vals", res.variable_values())
+dv = res.dual_values()
+print("dual type", type(dv))
+print("dir dv", [a for a in dir(dv) if not a.startswith("_")][:40])
+print("dual c1", dv[c1], "dual c2", dv[c2])
+rc = res.reduced_costs()
+print("rc type", type(rc), "rc x", rc[x], "rc y", rc[y])

@@ -1,0 +1,42 @@
+{
+  "instance": "scp41",
+  "best_known": 429,
+  "proved_optimal": true,
+  "methods": {
+    "direct": {
+      "objective": 429,
+      "time_s": 0.25,
+      "gap": 0,
+      "iterations": 0,
+      "note": "HIGHS MIP proves optimal 429; 66 columns selected; solve_time~0.070s"
+    },
+    "column_generation": {
+      "objective": 429,
+      "time_s": 3.017,
+      "gap": 0,
+      "iterations": 166,
+      "note": "RMP GLOP LP=429; pool pricing over all 1000 columns; integer repair HIGHS=429; 165 columns added"
+    },
+    "benders": {
+      "objective": 429,
+      "time_s": 0.981,
+      "gap": 0,
+      "iterations": 3,
+      "note": "LP-relaxation Benders with binary master y and continuous covering subproblem; 3 cuts; LB=429; integer repair HIGHS=429"
+    },
+    "lagrangian": {
+      "objective": 429,
+      "time_s": 1.541,
+      "gap": 0,
+      "iterations": 600,
+      "note": "Subgradient LB=428.98847765; greedy repair UB=434; MIP repair=429; dual gap vs 429 = 2.7e-05"
+    },
+    "lbbd": {
+      "objective": 429,
+      "time_s": 0.203,
+      "gap": 0,
+      "iterations": 2,
+      "note": "200 logic cuts; lazy-constraint MIP (HIGHS); proves optimal 429"
+    }
+  }
+}

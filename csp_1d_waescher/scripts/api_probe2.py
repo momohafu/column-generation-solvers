@@ -1,0 +1,16 @@
+from ortools.math_opt.python import mathopt
+m=mathopt.Model(name='t')
+x=m.add_variable(lb=0.0, is_integer=False, name='x')
+y=m.add_variable(lb=0.0, is_integer=False, name='y')
+print('vars ok',x,y)
+c1=m.add_linear_constraint(x+y>=3)
+c2=m.add_linear_constraint(2*x+y<=8)
+m.minimize(x+2*y)
+res=mathopt.solve(m, mathopt.SolverType.GLOP, params=mathopt.SolveParameters(enable_output=False))
+print('reason',res.termination.reason,'obj',res.objective_value())
+print('dual_values', res.dual_values())
+print(type(res.dual_values()))
+for k,v in res.dual_values().items():
+    print('dual key',k,'val',v)
+print('reduced_costs', res.reduced_costs())
+print('var values', res.variable_values())

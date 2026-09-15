@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>VRPTW c101 求解结果汇总 — column-generation-solvers/vrptw_solomon25</title>
+<style>
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; margin: 2rem auto; max-width: 1000px;
+         background: #f6f7f9; color: #1f2430; }
+  h1 { border-left: 6px solid #2f6fed; padding-left: .8rem; }
+  h2 { margin-top: 2rem; color: #2f6fed; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; background: #fff;
+          box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  th, td { border: 1px solid #dfe3ea; padding: .5rem .7rem; font-size: .92rem; text-align: left; }
+  th { background: #2f6fed; color: #fff; }
+  tr:nth-child(even) td { background: #f8fafd; }
+  .ok { color: #0a7d33; font-weight: 600; }
+  .tag { display: inline-block; background: #e8f0fe; color: #2f6fed; border-radius: 4px;
+         padding: .1rem .5rem; font-size: .8rem; margin-right: .3rem; }
+  .note { color: #5a6472; font-size: .88rem; }
+  code { background: #eef1f5; padding: .05rem .35rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>VRPTW（Solomon c101，25 客户）求解结果汇总</h1>
+<p>
+实例：c101（25 客户，车辆 K=25，容量 Q=200，仓库时间窗 [0,1236]，服务时长 90） ·
+环境：WSL Ubuntu-20.04 + conda jupyter-env（Python 3.10.20，OR-Tools 9.15.6755） ·
+数据：<code>column-generation-testcases/vrptw_solomon_25/c101.txt</code>
+</p>
+<p class="note">
+精确最优目标 = <b>191.8136197787</b>（6 位小数 <b>191.813620</b>，两位小数 <b>191.81</b> = Solomon 文献 BKS），
+3 辆车。<b>六种方法全部独立证明最优，gap 均为 0.0%</b>。
+</p>
+
+<h2>统一结果对比（6 种方法）</h2>
+<table>
+<tr><th>方法</th><th>目标值</th><th>时间(s)</th><th>迭代/割数</th><th>gap%</th><th>证明最优</th><th>证明机制</th></tr>
+<tr><td>01 直接建模（3-index CP-SAT）</td><td>191.813620</td><td>0.9</td><td>—</td><td>0.0</td><td class="ok">是</td><td>K=2 不可行(0.1s) + K=3 OPTIMAL(0.8s)</td></tr>
+<tr><td>02 列生成（CP-SAT 定价）</td><td>191.813620</td><td>10.1</td><td>8 轮</td><td>0.0</td><td class="ok">是</td><td>LP 下界 = 整数目标</td></tr>
+<tr><td>03 Benders（对偶割）</td><td>191.813620</td><td>11.0</td><td>3 轮 / 3 割</td><td>0.0</td><td class="ok">是</td><td>Benders 下界 = 整数修复</td></tr>
+<tr><td>04 拉格朗日松弛</td><td>191.813620</td><td>20.4</td><td>600 轮次梯度</td><td>0.0</td><td class="ok">是</td><td>对偶下界 = 贪心/MIP 修复上界</td></tr>
+<tr><td>05 LBBD（逻辑割）</td><td>191.813620</td><td>3.6</td><td>10~22 轮 / no-good 15~39 + Hooker 2</td><td>0.0</td><td class="ok">是</td><td>θ≤UB−1 主问题不可行</td></tr>
+<tr><td>07 Branch-and-Price</td><td>191.813620</td><td>4.5</td><td>1 节点 / 0 分支</td><td>0.0</td><td class="ok">是</td><td>根节点 LP 即整数解</td></tr>
+</table>
+
+<h2>最优解（六方法输出完全一致）</h2>
+<table>
+<tr><th>车</th><th>路线</th><th>距离</th></tr>
+<tr><td>1</td><td>0 → 13 → 17 → 18 → 19 → 15 → 16 → 14 → 12 → 0</td><td>95.884709</td></tr>
+<tr><td>2</td><td>0 → 20 → 24 → 25 → 23 → 22 → 21 → 0</td><td>36.440680</td></tr>
+<tr><td>3</td><td>0 → 5 → 3 → 7 → 8 → 10 → 11 → 9 → 6 → 4 → 2 → 1 → 0</td><td>59.488231</td></tr>
+<tr><th colspan="2">合计（3 车）</th><th>191.813620（=191.81）</th></tr>
+</table>
+
+<h2>交付文件</h2>
+<p>
+<span class="tag">01_direct.ipynb</span><span class="tag">02_column_generation.ipynb</span>
+<span class="tag">03_benders.ipynb</span><span class="tag">04_lagrangian.ipynb</span>
+<span class="tag">05_lbbd.ipynb</span><span class="tag">06_unified_report.ipynb</span>
+<span class="tag">07_branch_and_price.ipynb</span><span class="tag">README.md</span>
+<span class="tag">results.json</span><span class="tag">02_column_generation_建模详解.md</span>
+<span class="tag">00_进度说明.md</span>
+</p>
+<p class="note">全部 notebook 均经 nbconvert 实际执行并保留输出；results_summary.csv（顶层）已由聚合脚本生成。</p>
+</body>
+</html>
