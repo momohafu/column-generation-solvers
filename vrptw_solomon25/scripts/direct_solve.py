@@ -103,12 +103,13 @@ def solve(Kv, time_limit=120.0):
                 routes.append(tuple(route))
     return st, obj, routes, el, solver.BestObjectiveBound()
 
-for Kv in (2, 3):
-    st, obj, routes, el, bound = solve(Kv, 120)
-    print(f"K={Kv}: {st} | obj_scaled={obj} | 时间 {round(el,1)}s | bound={bound} | 路线 {routes}")
-    if st == cp_model.OPTIMAL:
-        exact = 0.0
-        for r in routes:
-            seq = [0] + list(r) + [0]
-            exact += sum(dist(seq[i], seq[i+1]) for i in range(len(seq)-1))
-        print(f"  精确总距离 {exact:.10f} | 两位小数 {round(exact,2)} | BKS 191.81 match: {abs(round(exact,2)-191.81)<1e-9}")
+if __name__ == "__main__":
+    for Kv in (2, 3):
+        st, obj, routes, el, bound = solve(Kv, 120)
+        print(f"K={Kv}: {st} | obj_scaled={obj} | 时间 {round(el,1)}s | bound={bound} | 路线 {routes}")
+        if st == cp_model.OPTIMAL:
+            exact = 0.0
+            for r in routes:
+                seq = [0] + list(r) + [0]
+                exact += sum(dist(seq[i], seq[i+1]) for i in range(len(seq)-1))
+            print(f"  精确总距离 {exact:.10f} | 两位小数 {round(exact,2)} | BKS 191.81 match: {abs(round(exact,2)-191.81)<1e-9}")

@@ -54,6 +54,19 @@
   verify_consistency.py（三方法一致性校验）、probe_dual.py、probe_arc_branch.py、
   build_nb_02/03/05/06/07.py（notebook 构建器）及早期草稿
 
+## 数学建模与对偶推导详解（theory/ 系列，全部已执行）
+
+| notebook | 内容 |
+|---|---|
+| 01_direct_数学与最优性证书.ipynb | 3-index 完整模型；无对偶的最优性证书（目标=best bound） |
+| 02_列生成_LP对偶与reduced_cost.ipynb | LP 对偶规则表 + 乘子法推导对偶；rc=对偶松弛量三命题；数值验证（强对偶/互补松弛） |
+| 03_Benders_子问题对偶与割推导.ipynb | SP(y) 对偶逐步推导；θ+Σλy≥Σπ+Kμ 割的弱对偶有效性；数值验证 |
+| 04_拉格朗日_对偶函数与次梯度.ipynb | L(λ) 推导；次梯度支撑不等式证明；integrality property；数值验证 |
+| 05_LBBD_逻辑割推导.ipynb | no-good/Hooker/精确界三种逻辑割推导与有效性；数值验证 |
+| 07_Branch_and_Price_节点对偶与分支.ipynb | 节点 RMP 对偶（μ_ub/μ_lb）；弧流量分支；三类剪枝引理；数值验证 |
+
+（配套总览：08_主问题与子问题建模总览.md）
+
 ## 执行与验证方式
 
 每个 notebook 均用 nbconvert 实际执行并保留输出：
