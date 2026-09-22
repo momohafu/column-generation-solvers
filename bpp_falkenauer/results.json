@@ -1,0 +1,54 @@
+{
+  "instance": "u120_00",
+  "best_known": 48,
+  "proved_optimal": true,
+  "methods": {
+    "direct": {
+      "objective": 48,
+      "time_s": 50,
+      "gap": 0,
+      "optimal": true,
+      "note": "length LB 48 + partition pool MIP 48-bin solution (each item exactly once, load 7078) => proved; CP-SAT K=48 direct search UNKNOWN(120s)"
+    },
+    "column_generation": {
+      "objective": 48,
+      "time_s": 20,
+      "gap": 1.55,
+      "optimal": true,
+      "iterations": 50,
+      "note": "GG with multi-column knapsack-DP pricing (8 cols/iter); LP=47.265957; partition pool MIP 48 => optimum"
+    },
+    "benders": {
+      "objective": 48,
+      "time_s": 25,
+      "gap": 1.55,
+      "optimal": true,
+      "iterations": 3,
+      "note": "selection master + covering LP subproblem; LB=47.266; repair 48"
+    },
+    "lagrangian": {
+      "objective": 48,
+      "time_s": 25,
+      "gap": 3,
+      "optimal": true,
+      "iterations": 1500,
+      "note": "knapsack subproblem; subgradient LB=46.58+; partition pool MIP repair 48"
+    },
+    "lbbd": {
+      "objective": 48,
+      "time_s": 65,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 1,
+      "note": "item->bin master + capacity subproblem (lazy capacity cuts, 1D degenerate); 48 via pool-MIP warm-start perspective; direct search NO_SOLUTION_FOUND in limit"
+    },
+    "branch_and_price": {
+      "objective": 48,
+      "time_s": 20,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 2,
+      "note": "bin branching: root LP=47.266 fractional -> [47,47] infeasible (length LB) + [48,48] partition MIP 48 => proved"
+    }
+  }
+}
