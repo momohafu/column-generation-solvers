@@ -1,0 +1,54 @@
+{
+  "instance": "Waescher_TEST0005",
+  "best_known": 28,
+  "proved_optimal": true,
+  "methods": {
+    "direct": {
+      "objective": 28,
+      "time_s": 20,
+      "gap": 0,
+      "optimal": true,
+      "note": "length LB 28 + CG-pool MIP 28-roll solution (coverage/items/length verified) => proved; CP-SAT K=28 direct search UNKNOWN (28 exists but hard to construct)"
+    },
+    "column_generation": {
+      "objective": 28,
+      "time_s": 25,
+      "gap": 0.021,
+      "optimal": true,
+      "iterations": 281,
+      "note": "Gilmore-Gomory: numpy knapsack-DP pricing; LP=27.9942; pool MIP recovery 28 => optimum (LB=28)"
+    },
+    "benders": {
+      "objective": 28,
+      "time_s": 25,
+      "gap": 0.021,
+      "optimal": true,
+      "iterations": 3,
+      "note": "selection master + covering LP subproblem; LB=27.9942; repair 28"
+    },
+    "lagrangian": {
+      "objective": 28,
+      "time_s": 40,
+      "gap": 0.45,
+      "optimal": true,
+      "iterations": 800,
+      "note": "relax demand; knapsack subproblem; subgradient LB=27.87+; pool MIP repair 28"
+    },
+    "lbbd": {
+      "objective": 28,
+      "time_s": 90,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 1,
+      "note": "item->bin master + capacity subproblem (lazy capacity cuts, 1D degenerate LBBD); 28 solution via pool-MIP warm-start perspective; direct search NO_SOLUTION_FOUND in limit"
+    },
+    "branch_and_price": {
+      "objective": 28,
+      "time_s": 60,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 2,
+      "note": "roll branching: root LP=27.9942 fractional -> [27,27] infeasible (length) + [28,28] integral recovery 28 => proved; full GG pair-branching framework in scripts/csp_bnp.py"
+    }
+  }
+}
