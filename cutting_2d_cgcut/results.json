@@ -1,0 +1,54 @@
+{
+  "instance": "cgcut1",
+  "best_known": 244,
+  "proved_optimal": true,
+  "methods": {
+    "direct": {
+      "objective": 244,
+      "time_s": 55,
+      "gap": 0,
+      "optimal": true,
+      "note": "complete pattern enumeration (2119 candidates -> exact guillotine feasibility recursion -> 1748 patterns) + pool IP = 244; fixed orientation (literature convention; rotation gives 260, documented)"
+    },
+    "column_generation": {
+      "objective": 244,
+      "time_s": 1,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 1,
+      "note": "LP(conv)=max pattern value=244=IP (single-sheet structure); pool pricing"
+    },
+    "benders": {
+      "objective": 244,
+      "time_s": 1,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 1,
+      "note": "max-version: master max theta; cut theta<=V(y)+Σσ(y-y^k); σ all zero at V=244 -> exact bound converged"
+    },
+    "lagrangian": {
+      "objective": 244,
+      "time_s": 5,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 800,
+      "note": "relax item caps q: L(μ)=Σμq+max_pattern Σ(v-μ)a; dual min = 244 (strong duality, reached round 1)"
+    },
+    "lbbd": {
+      "objective": 244,
+      "time_s": 30,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 91,
+      "note": "CP-SAT candidate maximization master + exact guillotine feasibility subproblem; 90 no-good cuts reject infeasible candidates; finds 244 at iter 91"
+    },
+    "branch_and_price": {
+      "objective": 244,
+      "time_s": 1,
+      "gap": 0,
+      "optimal": true,
+      "iterations": 1,
+      "note": "root LP(conv)=244 integral (single pattern) -> 0 branches prove optimal; count branching implemented"
+    }
+  }
+}
